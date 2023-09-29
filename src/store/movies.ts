@@ -8,7 +8,7 @@ const BASE_URL = `https://www.omdbapi.com/?apikey=${API_KEY}&s=`
 
 const initialState = {
   isLoading: false,
-  error: null,
+  error: null as string | null | undefined,
   searchTerm: '',
   movies: [] as Movie[]
 }
