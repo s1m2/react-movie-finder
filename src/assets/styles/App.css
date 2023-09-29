@@ -1,0 +1,37 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-gap:1rem;
+}
+
+.form-group {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-block-end: 2rem;
+}
+
+.card {
+  position: relative;
+  text-align: center;
+  text-wrap: balance;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
