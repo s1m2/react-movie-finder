@@ -3,7 +3,7 @@ import type { PayloadAction } from '@reduxjs/toolkit';
 
 import { Movie } from './../types/movie';
 
-const BASE_URL = 'https://www.omdbapi.com/?apikey=34a9f027&s='
+const BASE_URL = `https://www.omdbapi.com/?apikey=${import.meta.env.OMDB_API_KEY}&s=`
 
 const initialState = {
   isLoading: false,
